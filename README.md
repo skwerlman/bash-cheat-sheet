@@ -86,3 +86,12 @@ In order to redirect the output from one command as input to the next one write 
 | Kill process by name | `killall PROCESS` |
 | Display top CPU processes | `top` |
 | Reports the process status | `ps` | `-f` (full listing), `-e` (all processes) |
+
+## Other
+| Command | Action | Options |
+| ------- | ------ | ------- |
+| Last commands used | `history` | `-c` (clear) |
+| Last matched command | `!*` |
+| Time command execution | `time COMMAND` |
+| Compare files line by line | `diff` |
+| Walk a file hierarchy | `find PATH [OPT] [EXPRESSION]` | `-name` (find by name), `-size` (find by size), `-iname` (case sensitive mode) |
