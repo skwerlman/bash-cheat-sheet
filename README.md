@@ -7,10 +7,10 @@ Introduction to the Unix command line. This document was inspired by André Augu
 | List | `ls` | `-a` (all files), `-l` (long format) |
 | Make directory | `mkdir [OPT] DIR` | `-p` (make parents) |
 | Change directory | `cd PATH` | `.` (current dir), `..` (parent dir), `~` (home dir) |
-| Print working directory | `pwd` | |
-| Create empty file | `touch FILE` | |
+| Print working directory | `pwd` |
+| Create empty file | `touch FILE` |
 | Copy | `cp [OPT] FROM TO` | `-r` (copy directories recursively) |
-| Move or rename | `mv FROM TO` | |
+| Move or rename | `mv FROM TO` |
 | Remove | `rm [OPT] FILE` | `-r` (recursively remove directories), `-f` (force) |
 | Remove directory | `rmdir [OPT] DIR` | `-p` (parents) |
 | Concatenate and print files | `cat [OPT] FILES` | `-l` (number the output lines) |
@@ -46,7 +46,7 @@ Introduction to the Unix command line. This document was inspired by André Augu
 | ----------- | ------ | ----------- |
 | `STDOUT` to a file | `COMMAND > FILE` | Overwrite |
 | `STDOUT` to a file | `COMMAND >> FILE` | Append |
-| `STDIN` to a file | `COMMAND < FILE` | |
+| `STDIN` to a file | `COMMAND < FILE` |
 
 In order to redirect the output from one command as input to the next one write `COMMAND1 | COMMAND2 | COMMAND3`.
 
@@ -55,3 +55,34 @@ In order to redirect the output from one command as input to the next one write 
 | ------ | ------- |
 | `*` | Any number of characters |
 | `?` | Any single character |
+
+## System and Security
+### UNIX Permissions
+`sudo [OPT] [USER] COMMAND` allows users to run programs with the security privileges of another user (normally the root).
+
+| `u` | `g` | `o` |
+| --- | --- | --- |
+| `user` | `group` | `others` |
+| `r` `w` `x` | `r` `w` `x` | `r` `w` `x` |
+| `4` `2` `1` | `4` `2` `1` | `4` `2` `1` |
+| `7` | `7` | `7` |
+
+| Command | Action | Options |
+| ------- | ------ | ------- |
+| Change permissions | `chmod [OPT] MODE FILE` | `-r` (recursively) |
+
+| Command | `MODE` |
+| ------- | ------ |
+| Read and execute for all | `+rx` |
+| Deny write access for group | `g-w` |
+| Read, write and execute for all | `777` |
+
+### UNIX Processes
+| Command | Action | Options |
+| ------- | ------ | ------- |
+| Run process in background | `COMMAND &` |
+| Background or suspended processes | `jobs` |
+| Send signal to a process | `kill SIGNAL PROCESS` |
+| Kill process by name | `killall PROCESS` |
+| Display top CPU processes | `top` |
+| Reports the process status | `ps` | `-f` (full listing), `-e` (all processes) |
