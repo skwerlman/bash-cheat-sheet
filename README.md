@@ -49,3 +49,9 @@ Introduction to the Unix command line. This document was inspired by André Augu
 | `STDIN` to a file | `COMMAND < FILE` | |
 
 In order to redirect the output from one command as input to the next one write `COMMAND1 | COMMAND2 | COMMAND3`.
+
+## Wildcards
+| Symbol | Matches |
+| ------ | ------- |
+| `*` | Any number of characters |
+| `?` | Any single character |
