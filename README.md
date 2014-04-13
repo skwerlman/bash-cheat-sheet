@@ -33,3 +33,10 @@ Introduction to the Unix command line. This document was inspired by André Augu
 | Display last lines | `tail [OPT] FILE` | `-n` (last `n` lines) |
 | Print lines matching a pattern | `grep [OPT] PATTERN [FILE...]` | `-c` (display the number of matched lines), `-i` (ignore case sensitivity), `-l` (display the filenames), `-n` (display the line numbers), `-w` (match whole word) |
 | Word count | `wc [OPT] FILE` | `-l` (line count), `-c` (byte count), `-m` (character count), `-w` (word count) |
+
+## Control Key Commands
+| Command | Action |
+| ------- | ------ |
+| Kill process | `CTRL + C` |
+| Stop process | `CTRL + Z` |
+| End of file | `CTRL + D` |
