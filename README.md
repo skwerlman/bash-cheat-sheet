@@ -6,7 +6,7 @@ Introduction to the Unix command line. This document was inspired by André Augu
 | ------- | ------ | ------- |
 | List | `ls` | `-a` (all files), `-l` (long format) |
 | Make directory | `mkdir [OPT] DIR` | `-p` (make parents) |
-| Change directory | `cd PATH` | `.` (current dir), `..` (parent dir), `~` (home dir) |
+| Change directory | `cd PATH` | `.` (current dir), `..` (parent dir), `~` (home dir), `-` (last dir) |
 | Print working directory | `pwd` |
 | Create empty file | `touch FILE` |
 | Copy | `cp [OPT] FROM TO` | `-r` (copy directories recursively) |
