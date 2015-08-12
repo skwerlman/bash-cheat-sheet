@@ -16,7 +16,7 @@ Introduction to the Unix command line. This document was inspired by André Augu
 | Concatenate and print files | `cat [OPT] FILES` | `-l` (number the output lines) |
 | View file | `less [OPT] FILE` | `-N` (number the output lines) |
 
-### Less Frequent Commands
+### `less` Frequent Commands
 | Key | Command | Key | Command |
 | --- | ------- | --- | ------- |
 | `Space` | Next page | `/<text>` | Forward search for `<text>` |
